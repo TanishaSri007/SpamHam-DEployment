@@ -11,5 +11,4 @@ text_model = Pipeline([('tfidf',TfidfVectorizer()),('model',SVC())])
 text_model.fit(x,y)
 select = st.text_input('Enter your message')
 op = text_model.predict([select])
-st.title(op[0])
-
+st.title(op[0]) 
